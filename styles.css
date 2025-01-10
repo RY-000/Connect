@@ -56,7 +56,9 @@ input[type="text"], input[type="password"], input[type="email"] {
 }
 
 .activity-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px; /* Optional: to add some styling to images */
+    width: 200px; /* Set a specific width */
+    height: 150px; /* Set a specific height */
+    object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+    border-radius: 10px; /* Optional: add rounded corners for a better look */
+}
 }
