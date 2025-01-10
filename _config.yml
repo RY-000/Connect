@@ -1,20 +1,10 @@
-# _config.yml
-
 title: My Jekyll Site
-description: A simple description of my site
-url: https://yourusername.github.io # Replace with your GitHub Pages URL
-baseurl: "" # Leave empty if you're using the main domain
+description: a Charity activity sign up website
+url: https://ry-000.github.io/Connect/
 
-# Build settings
 markdown: kramdown
-theme: jekyll-theme-primer # You can specify your theme here
+theme: jekyll-theme-primer
 
-# Enable plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-
-# Optional: add any additional settings as needed
-permalink: pretty # To specify URL format
-facebook: "https://facebook.com/yourprofile" # Example social media links
-twitter: "https://twitter.com/yourprofile"
