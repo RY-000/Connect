@@ -3,16 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Connect.com</title>
+    <title>Connect.com</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('https://res.cloudinary.com/parallax-agency/image/upload/c_fill%2Cq_auto%2Cf_auto%2Cw_993%2Ch_668/statamic/sots-uploads/Articles/Fundraising-news/giving-to-charity.jpg');
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            color: white; /* Example text color */
+        }
+
+        /* Button styles */
+        button {
+            transition: transform 0.2s ease; 
+        }
+        button:hover {
+            transform: scale(1.05); /* Slightly enlarges the button on hover */
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <h1>Welcome to Connect.com</h1>
-        <div class="button-container">
-            <button onclick="window.location.href='signup.html'">Sign Up</button>
-            <button onclick="window.location.href='signin.html'">Sign In</button>
-        </div>
+        <p>Your portal to social impact activities.</p>
+        <button onclick="window.location.href='activities.html'">View Activities</button>
     </div>
 </body>
 </html>
