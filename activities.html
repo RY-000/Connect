@@ -7,25 +7,36 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         .activity-item img {
-            width: 200px; /* Set specific width */
-            height: 150px; /* Set specific height */
-            object-fit: cover; /* Maintains aspect ratio while covering the area */
-            border-radius: 10px; /* Optional: for rounded corners */
+            width: 200px; 
+            height: 150px; 
+            object-fit: cover; 
+            border-radius: 10px; 
         }
         .activity-list {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 20px; /* Optional: adds space between activity items */
+            gap: 20px; 
         }
         .activity-item {
-            text-align: center; /* Center text under image */
+            text-align: center; 
+        }
+        /* Button styles */
+        button {
+            transition: transform 0.2s ease; 
+        }
+        button:hover {
+            transform: scale(1.05); /* Slightly enlarges the button on hover */
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Available Activities</h1>
+        
+        <!-- Back Button -->
+        <button id="back-btn" onclick="window.history.back();">Back</button>
+
         <div class="activity-list">
             <div class="activity-item">
                 <h2>Children's Hospital Fundraising</h2>
@@ -53,6 +64,7 @@
                 <button onclick="registerActivity('Awareness Campaign')">Sign Up</button>
             </div>
         </div>
+
         <button id="current-events-btn" onclick="window.location.href='current-events.html'">Current Events</button>
     </div>
     <script src="script.js"></script>
