@@ -7,19 +7,22 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Current Events</h1>
-    <div id="events">
-        <!-- Example Event -->
-        <div class="event" data-id="1">
-            <h2>Event 1</h2>
-            <button onclick="signUpForEvent(1)">Sign Up</button>
-            <button onclick="removeSignedUpEvent(1)">Remove</button> <!-- Button to remove the event -->
+    <div class="container">
+        <h1>Current Events</h1>
+        <div id="registered-events">
+            <!-- Dynamically populated registered events will go here -->
         </div>
-        
-        <div class="event" data-id="2">
-            <h2>Event 2</h2>
-            <button onclick="signUpForEvent(2)">Sign Up</button>
-            <button onclick="removeSignedUpEvent(2)">Remove</button>
+
+        <h2>Available Events</h2>
+        <div id="events">
+            <div class="event" data-id="1">
+                <h2>Event 1</h2>
+                <button onclick="signUpForEvent(1)">Sign Up</button>
+            </div>
+            <div class="event" data-id="2">
+                <h2>Event 2</h2>
+                <button onclick="signUpForEvent(2)">Sign Up</button>
+            </div>
         </div>
     </div>
 
