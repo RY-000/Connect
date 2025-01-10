@@ -16,3 +16,18 @@ if (window.location.href.includes('current-events.html')) {
         eventsContainer.innerHTML = registeredEvents.map(event => `<p>${event}</p>`).join('');
     }
 }
+let signedUpEvents = []; // Store signed-up events
+
+function signUpForEvent(eventId) {
+    signedUpEvents.push(eventId);
+    alert(`Signed up for event ${eventId}`);
+}
+
+function removeSignedUpEvent(eventId) {
+    signedUpEvents = signedUpEvents.filter(event => event !== eventId);
+    alert(`Removed from event ${eventId}`);
+    const eventElement = document.querySelector(`.event[data-id='${eventId}']`);
+    if (eventElement) {
+        eventElement.remove(); // Remove the event from the DOM
+    }
+}
