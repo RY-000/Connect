@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Available Activities - Connect.com</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .activity-item img {
+            width: 200px; /* Set specific width */
+            height: 150px; /* Set specific height */
+            object-fit: cover; /* Maintains aspect ratio while covering the area */
+            border-radius: 10px; /* Optional: for rounded corners */
+        }
+        .activity-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; /* Optional: adds space between activity items */
+        }
+        .activity-item {
+            text-align: center; /* Center text under image */
+        }
+    </style>
 </head>
 <body>
     <div class="container">
