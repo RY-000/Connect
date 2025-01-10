@@ -20,6 +20,15 @@
         </form>
         <p>Already have an account? <a href="signin.html">Sign In</a></p>
     </div>
-    <script src="script.js"></script>
+    <script>
+        document.getElementById('signup-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+            
+            // You would typically send this data to your server here
+
+            // Redirect to activities.html
+            window.location.href = 'activities.html';
+        });
+    </script>
 </body>
 </html>
