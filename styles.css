@@ -43,3 +43,20 @@ input[type="text"], input[type="password"], input[type="email"] {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
+.activity-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.activity-item {
+    margin: 20px;
+    text-align: center;
+}
+
+.activity-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: to add some styling to images */
+}
