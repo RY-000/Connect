@@ -35,7 +35,7 @@ button:hover {
     background-color: #005b9a;
 }
 
-/* Additional styles for Sign Up / Sign In if you have those pages */
+/* Styles for input fields */
 input[type="text"], input[type="password"], input[type="email"] {
     width: calc(100% - 20px);
     padding: 10px;
