@@ -5,27 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Current Events - Connect.com</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('https://res.cloudinary.com/parallax-agency/image/upload/c_fill%2Cq_auto%2Cf_auto%2Cw_993%2Ch_668/statamic/sots-uploads/Articles/Fundraising-news/giving-to-charity.jpg');
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            color: white; /* Example text color */
+        }
+
+        /* Button styles */
+        button {
+            transition: transform 0.2s ease; 
+            margin: 10px; /* Optional: add some margin around buttons */
+        }
+        button:hover {
+            transform: scale(1.05); /* Slightly enlarges the button on hover */
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <h1>Current Events</h1>
-        <div id="registered-events">
-            <!-- Dynamically populated registered events will go here -->
-        </div>
 
-        <h2>Available Events</h2>
-        <div id="events">
-            <div class="event" data-id="1">
-                <h2>Children's Hospital Fundraising</h2>
-                <button onclick="signUpForEvent(1)">Sign Up</button>
+        <!-- Back Button -->
+        <button id="back-btn" onclick="window.history.back();">Back</button>
+
+        <div class="event-list">
+            <div class="event-item">
+                <h2>Upcoming Charity Run</h2>
+                <p>Date: September 15, 2023</p>
             </div>
-            <div class="event" data-id="2">
-                <h2>Beach Cleanup</h2>
-                <button onclick="signUpForEvent(2)">Sign Up</button>
+            <div class="event-item">
+                <h2>Food Drive Event</h2>
+                <p>Date: October 5, 2023</p>
             </div>
+            <div class="event-item">
+                <h2>Volunteer Day at Local Park</h2>
+                <p>Date: November 20, 2023</p>
+            </div>
+            <!-- Add more events as needed -->
         </div>
     </div>
-
-    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
